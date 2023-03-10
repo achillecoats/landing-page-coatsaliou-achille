@@ -1,4 +1,9 @@
-                /* Gros site */
+/************************************************ Bienvenue sur mon CSS :) ************************************************/
+
+
+
+
+                /**************** Gros site ****************/
 body{
     background-color: rgb(25, 17, 17);
     text-align: center;
@@ -7,7 +12,8 @@ body{
 }
 
 
-                /* Description du site */
+
+                /**************** Description du site ****************/
 .desc{
     background-color: #491941;
     background-image: url(https://preview.redd.it/fgd2n1tph0m91.jpg?auto=webp&s=d778556f5b7125e7e658bb9a497c1b46b0fb924f);
@@ -16,10 +22,18 @@ body{
     padding: 20px;
     font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
     font-size: 28px;
-    color: whitesmoke;   
+    color: whitesmoke;
+    box-shadow: #31A61D 0px 0px 15px 5px;
+    border-radius: 15px;
 }
 
- 
+.desc:hover{
+    background-position-y: bottom;
+    box-shadow: #43089D 0px 0px 15px 5px;
+    transition: background-position-y 0.5s ease-in-out;
+    transition: background-position-y 0.5s ease-out;
+}
+
 #algo_pt{
     font-size: 12px;
     font-style: oblique;
@@ -27,7 +41,8 @@ body{
 }
 
 
-                /* "Site en contruction" */
+
+                /**************** "Site en contruction" ****************/
 .building{
     font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
     font-variant: small-caps;
@@ -36,7 +51,8 @@ body{
 }
 
 
-                /* Légende de l'image de construction du site */
+
+                /**************** Légende de l'image de construction du site ****************/
 .imglegend{
     font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
     color: whitesmoke;
@@ -78,13 +94,15 @@ body{
 
 
 
-                /* Image du proto du site */
+                /**************** Image du proto du site ****************/
 .proto_img{
     margin: auto;
+    margin-bottom: 5vw;
 }
 
 
-                /* Header + Header img + Header animation */
+
+                /**************** Header + Header img + Header animation ****************/
 header{
     background-color: #EE719E;
     height: 8;
@@ -134,29 +152,37 @@ header:hover{
     animation: tres_funky 2s
 }
 
+
+
+                /**************** Connection button + Hover ****************/
+.connec{
+    display: flex;
+    justify-content: end;
+    align-items: center;
+    list-style: none;
+    margin-bottom: 15px;
+    margin-right: 20px;
+}
+
 #connec_btn{
     background-color: rgb(255, 234, 0);
     box-shadow: #EE719E 0px 0px 15px 5px;
 }
 
-
-                /* Connection button + Hover */
 #connec_btn:hover{
     background-color: #EE719E;
     box-shadow: rgb(255, 234, 0) 0px 0px 15px 5px;
     cursor: pointer;
     color: whitesmoke;
-}
-
-.connec{
-    display: flex;
-    justify-content: end;
-    list-style: none;
-    margin-bottom: 15px;
+    transform: scale(1.2);
+    transition: transform 0.2s ease-in-out;
 }
 
 
-                /* Boutons social + Hover */
+
+
+
+                /**************** Boutons social + Hover ****************/
 .social_buttons ul{
     display: flex;
     align-items: center;
@@ -164,6 +190,7 @@ header:hover{
     list-style: none;
     flex-wrap: wrap;
 }
+
 #btn_insta{
     background-color: #ff75af;
     margin: 10px;
@@ -185,22 +212,29 @@ header:hover{
     transition: background-color 0.2s ease-in-out;
     box-shadow: inset -2px 1px 10px 7px #ff75af;
     cursor: pointer;
+    transform: scale(1.1);
+    transition: transform 0.2s ease-in-out;
 }
 #btn_ytb:hover{
     background-color: white;
     transition: background-color 0.2s ease;
     box-shadow: inset -2px 1px 10px 7px #FF5D5D;
     cursor: pointer;
+    transform: scale(1.1);
+    transition: transform 0.2s ease-in-out;
 }
 #btn_twt:hover{
     background-color: white;
     transition: background-color 0.2s ease-in-out;
     box-shadow: inset -2px 1px 10px 7px #9DE7FF;
     cursor: pointer;
+    transform: scale(1.1);
+    transition: transform 0.2s ease-in-out;
 }
 
 
-                /* Footer */
+
+                /**************** Footer ****************/
 footer{
     background-color: #F7C983;
     height: auto;
@@ -209,6 +243,9 @@ footer{
     align-items: center;
 }
 
+
+
+                /**************** Media Queries ****************/
 @media screen and (max-width: 800px){
     .desc{
         font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
