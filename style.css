@@ -1,0 +1,235 @@
+                /* Gros site */
+body{
+    background-color: rgb(25, 17, 17);
+    text-align: center;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    cursor: url(https://tinyurl.com/2eb7lczf), auto;
+}
+
+
+                /* Description du site */
+.desc{
+    background-color: #491941;
+    background-image: url(https://preview.redd.it/fgd2n1tph0m91.jpg?auto=webp&s=d778556f5b7125e7e658bb9a497c1b46b0fb924f);
+    background-blend-mode: difference;
+    background-size: cover;
+    padding: 20px;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-size: 28px;
+    color: whitesmoke;   
+}
+
+ 
+#algo_pt{
+    font-size: 12px;
+    font-style: oblique;
+    margin-top: 5px;
+}
+
+
+                /* "Site en contruction" */
+.building{
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-variant: small-caps;
+    font-size: 20px;
+    color: whitesmoke;
+}
+
+
+                /* Légende de l'image de construction du site */
+.imglegend{
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    color: whitesmoke;
+    font-size: 2vw;
+    height: 3vw;
+}
+
+@keyframes tictac {
+	0%,
+	100% {
+		transform: translateX(0%);
+		transform-origin: 50% 50%;
+	}
+
+	15% {
+		transform: translateX(-30px) rotate(6deg);
+	}
+
+	30% {
+		transform: translateX(15px) rotate(-6deg);
+	}
+
+	45% {
+		transform: translateX(-15px) rotate(3.6deg);
+	}
+
+	60% {
+		transform: translateX(9px) rotate(-2.4deg);
+	}
+
+	75% {
+		transform: translateX(-6px) rotate(1.2deg);
+	}
+}
+
+.imglegend:hover + .proto_img{
+    animation: tictac 1s;
+}
+
+
+
+                /* Image du proto du site */
+.proto_img{
+    margin: auto;
+}
+
+
+                /* Header + Header img + Header animation */
+header{
+    background-color: #EE719E;
+    height: 8;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    box-shadow: 4px -4px 15px 0px #FF1F1F, 12px -11px 7px 0px #FF9376, 20px -5px 7px 0px #FFE264, 20px 6px 7px 0px #F6FF33, 13px 12px 17px 0px #FF9527, 2px 17px 17px 0px #FF0000, -9px 21px 18px 0px #FFF212, -9px 6px 11px 0px #FF0808, -11px -9px 11px 0px #FFFA17, -11px -9px 11px 0px #FFFA17, 19px 25px 43px 35px rgba(238,113,158,0);
+    border-radius: 50% 50% 50% 50%;
+}  
+
+header img {
+    width: 75%;
+}
+
+@keyframes tres_funky {
+	0% {
+		transform: scale3d(1, 1, 1);
+	}
+
+	30% {
+		transform: scale3d(1.25, 0.75, 1);
+	}
+
+	40% {
+		transform: scale3d(0.75, 1.25, 1);
+	}
+
+	50% {
+		transform: scale3d(1.15, 0.85, 1);
+	}
+
+	65% {
+		transform: scale3d(0.95, 1.05, 1);
+	}
+
+	75% {
+		transform: scale3d(1.05, 0.95, 1);
+	}
+
+	100% {
+		transform: scale3d(1, 1, 1);
+	}
+}
+
+header:hover{
+    background-color: #F7C983;
+    animation: tres_funky 2s
+}
+
+#connec_btn{
+    background-color: rgb(255, 234, 0);
+    box-shadow: #EE719E 0px 0px 15px 5px;
+}
+
+
+                /* Connection button + Hover */
+#connec_btn:hover{
+    background-color: #EE719E;
+    box-shadow: rgb(255, 234, 0) 0px 0px 15px 5px;
+    cursor: pointer;
+    color: whitesmoke;
+}
+
+.connec{
+    display: flex;
+    justify-content: end;
+    list-style: none;
+    margin-bottom: 15px;
+}
+
+
+                /* Boutons social + Hover */
+.social_buttons ul{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    list-style: none;
+    flex-wrap: wrap;
+}
+#btn_insta{
+    background-color: #ff75af;
+    margin: 10px;
+    padding: 10px;
+}
+#btn_ytb{
+    background-color: #FF5D5D;
+    margin: 10px;
+    padding: 10px;
+}
+#btn_twt{
+    background-color: #9DE7FF;
+    margin: 10px;
+    padding: 10px;
+}
+
+#btn_insta:hover{
+    background-color: white;
+    transition: background-color 0.2s ease-in-out;
+    box-shadow: inset -2px 1px 10px 7px #ff75af;
+    cursor: pointer;
+}
+#btn_ytb:hover{
+    background-color: white;
+    transition: background-color 0.2s ease;
+    box-shadow: inset -2px 1px 10px 7px #FF5D5D;
+    cursor: pointer;
+}
+#btn_twt:hover{
+    background-color: white;
+    transition: background-color 0.2s ease-in-out;
+    box-shadow: inset -2px 1px 10px 7px #9DE7FF;
+    cursor: pointer;
+}
+
+
+                /* Footer */
+footer{
+    background-color: #F7C983;
+    height: auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+@media screen and (max-width: 800px){
+    .desc{
+        font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+        font-size: 12px;
+        color: whitesmoke;
+        background-color: #491941;
+        padding: 30px;  
+    }
+
+    #algo_pt{
+        font-size: 5px;
+    }
+
+    .building{
+        font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+        font-variant: small-caps;
+        font-size: 10px;
+        color: whitesmoke;
+    }
+
+    footer{
+        font-size: 5px;
+    }
+}
